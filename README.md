@@ -1,2 +1,3 @@
-# gujaratisamajinc
-Gujarati Samaj, Inc. of Portland
+# Gujarati Samaj, Inc. of Portland
+
+## Instructions
