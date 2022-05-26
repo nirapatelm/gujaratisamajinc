@@ -1,0 +1,265 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(0, 0, 0);
+}
+
+#logo {
+    width: 80px;
+    height: 80px;
+}
+
+#logo-align{
+    justify-content: flex-start;
+}
+
+body {
+    background-color: #ffffff;
+}
+
+#body {
+    max-width: 650px;
+    margin: 40px auto;
+    padding: 0 20px;
+    font-family: 18px/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+h2 {
+    line-height: 60px;
+}
+
+p {
+    line-height: 30px;
+}
+
+header {
+    /* background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('imgs/bg-iss013e78960.jpg'); */
+    background: white;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 100vh;
+}
+
+h1 {
+    color: #ffffff;
+    text-align: center;
+    vertical-align: text-top;
+    padding: 15px;
+    /* line-height: 1px; */
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 200px;
+    size: 100%;
+}
+
+h3 {
+    font-size: 1.2em;
+}
+
+#p_0subtitle {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin-top: 5px;
+    /* background-color: #0005; */
+    font-size: 1.2rem;
+    text-align: center;
+}
+
+/* START OF NAVBAR CODE */
+
+nav {
+    width: 100%;
+    height: 10vh;
+}
+
+
+/* #d_1sub {
+    display: flex;
+    justify-content: center;
+    align-items: top;
+    margin-top: 5px;
+    background-color: #0005;
+    width: fit-content;
+    height: fit-content;
+} */
+
+@media screen and (max-width: 600px) {
+    #d_1sub {
+        display: none;
+    }
+
+    .sidebyside {
+        flex-direction: column;
+    }
+}
+
+
+/* Start of Menu Code
+this is where the menu is laid out and styled. especially on mobile devices with the collapsible menu.
+you should not need to change things in this section
+Menu code has been modified under the MIT License. original code was found at:
+https://www.cssscript.com/css-flexbox-based-responsive-navigation/
+https://www.cssscript.com/demo/css-flexbox-based-responsive-navigation/ */
+
+label {
+    display: inline;
+}
+
+
+/* nav {
+    margin: 50px auto;
+    max-width: 700px;
+    width: 95%;
+    font-family: 'Roboto Condensed', sans-serif;
+} */
+
+#menu-toggle-checkbox,
+.toggle {
+    display: none;
+}
+
+.menu {
+    padding: 0;
+    margin: 0;
+    /* max-width: 700px; */
+    /* height: 50px; */
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+    list-style-type: none;
+    z-index: 2;
+    opacity: 0.9;
+    /* width: 100vw; */
+}
+
+.menu li {
+    padding: 10px 15px;
+    text-align: center;
+    margin: 1vw;
+}
+
+.menu li a {
+    text-decoration: none;
+    align-self: center;
+    /* border-radius: 5px; */
+    font-size: 1em;
+    /* transition: background .2s linear; */
+}
+
+
+/* menu styles for mobile devices below */
+
+@media screen and (max-width: 800px) {
+    .menu li a {
+        font-size: 1.25em;
+    }
+    h1 {
+        font-size: 2.25em;
+    }
+    #p_0subtitle {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+    .title {
+        vertical-align: middle;
+    }
+    .site-nav {
+        height: 5vh;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .toggle {
+        display: block;
+        position: relative;
+        text-align: right;
+        /* font-size: 14px; */
+        line-height: 40px;
+        cursor: pointer;
+        width: 100%;
+        height: 40px;
+        /* font-size: 18px; */
+        /* color: #595959; */
+        /* background: #dbdbdb; */
+        /* border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px; */
+        transition: all .1s linear;
+        z-index: 5;
+    }
+    .toggle>img {
+        height: 100%;
+        margin: 25px;
+        transform: rotate(0deg);
+        transition: transform .3s linear;
+    }
+    /* .toggle:hover {
+        background: #cecece;
+    } */
+    #menu-toggle-checkbox:checked+label .demo li {
+        opacity: 1;
+        visibility: visible;
+        transition: all .7s linear;
+    }
+    #menu-toggle-checkbox:checked+label .toggle {
+        background-color: white;
+    }
+    #menu-toggle-checkbox:checked+label .demo {
+        height: 100vh;
+        transition: height .3s linear;
+        background-color: white;
+    }
+    #menu-toggle-checkbox:checked+label .toggle>img {
+        transform: rotate(-90deg);
+        transition: transform .3s linear;
+    }
+    .menu {
+        /* border-radius: 0px;
+        border-top-left-radius: 5px;
+        border-top-right-radius: 5px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 0px;
+        transition: height .3s linear;
+    }
+    .menu li {
+        display: flex;
+        /* magic */
+        align-self: center;
+        /* width: 95%; */
+        opacity: 0.9;
+        visibility: hidden;
+        transition: all .3s linear;
+    }
+    .menu li a {
+        /* width: 95%; */
+        text-align: center;
+        align-self: center;
+        align-content: center;
+    }
+}
+
+
+/* End of Menu Code */
+
+footer {
+    text-align: center;
+}
+
+.sidebyside {
+    display: flex;
+    justify-content: space-around;
+    background-color: #101316;
+}
+
+.sidebyside>* {
+    margin: 5px;
+}
