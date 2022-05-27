@@ -10,9 +10,9 @@
     height: 80px;
 }
 
-#logo-align{
+/* .logo-align{
     justify-content: flex-start;
-}
+} */
 
 body {
     background-color: #ffffff;
