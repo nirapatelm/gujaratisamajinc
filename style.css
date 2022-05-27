@@ -9,32 +9,57 @@ body {
     background-color: #ffffff;
 }
 
-h3 {
+.h3-style {
     font-family: 'Playfair Display', serif;
     font-size: 1.5rem;
     color: white;
+
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 20pt;
+    font-weight: bold;
+    color: #5C4E75;
+}
+
+#h3-line-spacing {
+    line-height: 20px;
+}
+
+p {
+    font-size: 12pt;
+    line-height: 30px;
 }
 
 header {
     font-style: italic;
+    font-weight: bold;
+    font-size: 11pt;
 }
 
 /* 
 *START OF NAVBAR CODE
 ! Includes @media Queries
 */
+.menu-background {
+    background-color: #f2f1f1;
+    opacity: 75%;
+}
 
 .logo {
     float: left;
-    color: #fff;
+    color: #f2f1f1;
     font-size: 50px;
     line-height: 50px;
     transition: 0.7s all;
+    padding-left: 5px;
+    padding-top: -10px;
 }
 
 #logo {
-    height: 75px;
-    width: 75px;
+    height: 80px;
+    width: 80px;
 }
 
 @media screen and (max-width: 600px) {
@@ -47,13 +72,6 @@ header {
     }
 }
 
-
-/* Start of Menu Code
-this is where the menu is laid out and styled. especially on mobile devices with the collapsible menu.
-you should not need to change things in this section
-Menu code has been modified under the MIT License. original code was found at:
-https://www.cssscript.com/css-flexbox-based-responsive-navigation/
-https://www.cssscript.com/demo/css-flexbox-based-responsive-navigation/ */
 
 label {
     display: inline;
@@ -85,11 +103,8 @@ label {
 .menu li a {
     text-decoration: none;
     align-self: center;
-    /* border-radius: 5px; */
     font-size: 1em;
-    /* transition: background .2s linear; */
 }
-
 
 /* menu styles for mobile devices below */
 
@@ -121,16 +136,10 @@ label {
         display: block;
         position: relative;
         text-align: right;
-        /* font-size: 14px; */
         line-height: 40px;
         cursor: pointer;
         width: 100%;
         height: 40px;
-        /* font-size: 18px; */
-        /* color: #595959; */
-        /* background: #dbdbdb; */
-        /* border-bottom-left-radius: 5px;
-        border-bottom-right-radius: 5px; */
         transition: all .1s linear;
         z-index: 5;
     }
@@ -149,13 +158,13 @@ label {
     }
 
     #menu-toggle-checkbox:checked+label .toggle {
-        background-color: white;
+        background-color: #A3B18A;
     }
 
     #menu-toggle-checkbox:checked+label .demo {
         height: 100vh;
         transition: height .3s linear;
-        background-color: white;
+        background-color: #A3B18A;
     }
 
     #menu-toggle-checkbox:checked+label .toggle>img {
@@ -164,9 +173,6 @@ label {
     }
 
     .menu {
-        /* border-radius: 0px;
-        border-top-left-radius: 5px;
-        border-top-right-radius: 5px; */
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -177,37 +183,47 @@ label {
 
     .menu li {
         display: flex;
-        /* magic */
         align-self: center;
-        /* width: 95%; */
         opacity: 0.9;
         visibility: hidden;
         transition: all .3s linear;
     }
 
     .menu li a {
-        /* width: 95%; */
         text-align: center;
         align-self: center;
         align-content: center;
     }
-
 }
 
 /* 
 *END OF NAVBAR CODE
 */
 
+#splash {
+    background-color: #A3B18A;
+    opacity: 31%;
+    height: 90vh;
+}
+
 footer {
     text-align: center;
+}
+
+#footer-background {
+    background-color: #C75A37;
 }
 
 .sidebyside {
     display: flex;
     justify-content: space-around;
-    background-color: #C75A37;
 }
 
 .sidebyside>* {
     margin: 5px;
+}
+
+.sidebyside h3 {
+    padding: 40px;
+    max-width: 450px;
 }
