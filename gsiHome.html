@@ -9,7 +9,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- Title -->
-
     <title>Gujarati Samaj, Inc. of Portland</title>
 
     <!-- Linking to CSS File -->
@@ -17,49 +16,77 @@
 
     <!-- Importing Font Packages -->
 
+        <!-- Playfair Display -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,700&display=swap"
+        rel="stylesheet">
+
+        <!-- Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
 </head>
 
 <body>
-
-    <nav class="site-nav">
-        <input type="checkbox" id="menu-toggle-checkbox" />
-        <label for="menu-toggle-checkbox">
-            <span class="toggle"><img src="/imgs/navicon.svg"
-                    alt="a menu icon depicted with three horizontal lines where the first and last line are shorter than the middle one and the whole thing is rotated 45 degrees"></span>
-            <!-- 
-                To any future developer who tries to remove this <ul> from this <label>, when you give up, please increment this counter as a warning to the next person
-                number_of_times_someone_tried_to_make_this_prettier = 1
-                -->
-
-            <ul class="menu">
-                <li id="logo-align">
+    <div>
+        <header>
+            <div class="inner">
+                <div class="logo">
                     <img id="logo" src="/imgs/logoGSI.png" alt="GSI Logo">
-                </li>
-                <li>
-                    <a href="#home">Home</a>
-                </li>
-                <li>
-                    <a href="#aboutUs">About Us</a>
-                </li>
-                <li>
-                    <a href="#donate">Donate</a>
-                </li>
-                <li>
-                    <a href="#events">Events</a>
-                </li>
-                <li>
-                    <a href="#membership">Membership</a>
-                </li>
-                <li>
-                    <a href="#volunteer">Volunteer</a>
-                </li>
-            </ul>
-        </label>
-    </nav>
+                </div>
+                <nav class="site-nav" role="navigation">
+                    <input type="checkbox" id="menu-toggle-checkbox" />
+                    <label for="menu-toggle-checkbox">
+                        <span class="toggle"><img src="/imgs/navicon.svg"
+                                alt="a menu icon depicted with three horizontal lines where the first and last line are shorter than the middle one and the whole thing is rotated 45 degrees"></span>
+
+                        <!-- * To any future developer who tries to remove this <ul> from this <label>, when you give up, please increment this counter as a warning to the next person
+                    * number_of_times_someone_tried_to_make_this_prettier = 1 -->
+
+                        <ul class="menu">
+                            <li>
+                                <a href="#home">Home</a>
+                            </li>
+                            <li>
+                                <a href="#aboutUs">About Us</a>
+                            </li>
+                            <li>
+                                <a href="#donate">Donate</a>
+                            </li>
+                            <li>
+                                <a href="#events">Events</a>
+                            </li>
+                            <li>
+                                <a href="#membership">Membership</a>
+                            </li>
+                            <li>
+                                <a href="#volunteer">Volunteer</a>
+                            </li>
+                        </ul>
+                </nav>
+            </div>
+        </header>
+    </div>
 
     <br />
     <br />
+    <br />
 
-    
+
+
+    <footer class="sidebyside">
+        <h3>
+            Connect
+        </h3>
+
+        <h3>
+            Sponsors
+        </h3>
+
+        <h3>
+            Get Involved
+        </h3>
+    </footer>
 
 </body>

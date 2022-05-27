@@ -1,93 +1,41 @@
 * {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Open Sans', sans-serif;
     color: rgb(0, 0, 0);
 }
-
-#logo {
-    width: 80px;
-    height: 80px;
-}
-
-/* .logo-align{
-    justify-content: flex-start;
-} */
 
 body {
     background-color: #ffffff;
 }
 
-#body {
-    max-width: 650px;
-    margin: 40px auto;
-    padding: 0 20px;
-    font-family: 18px/1.5 -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    color: rgb(255, 255, 255);
-}
-
-h2 {
-    line-height: 60px;
-}
-
-p {
-    line-height: 30px;
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: white;
 }
 
 header {
-    /* background: linear-gradient( rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url('imgs/bg-iss013e78960.jpg'); */
-    background: white;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: cover;
-    height: 100vh;
+    font-style: italic;
 }
 
-h1 {
-    color: #ffffff;
-    text-align: center;
-    vertical-align: text-top;
-    padding: 15px;
-    /* line-height: 1px; */
-    font-size: 3em;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 200px;
-    size: 100%;
+/* 
+*START OF NAVBAR CODE
+! Includes @media Queries
+*/
+
+.logo {
+    float: left;
+    color: #fff;
+    font-size: 50px;
+    line-height: 50px;
+    transition: 0.7s all;
 }
 
-h3 {
-    font-size: 1.2em;
+#logo {
+    height: 75px;
+    width: 75px;
 }
-
-#p_0subtitle {
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    margin-top: 5px;
-    /* background-color: #0005; */
-    font-size: 1.2rem;
-    text-align: center;
-}
-
-/* START OF NAVBAR CODE */
-
-nav {
-    width: 100%;
-    height: 10vh;
-}
-
-
-/* #d_1sub {
-    display: flex;
-    justify-content: center;
-    align-items: top;
-    margin-top: 5px;
-    background-color: #0005;
-    width: fit-content;
-    height: fit-content;
-} */
 
 @media screen and (max-width: 600px) {
     #d_1sub {
@@ -111,14 +59,6 @@ label {
     display: inline;
 }
 
-
-/* nav {
-    margin: 50px auto;
-    max-width: 700px;
-    width: 95%;
-    font-family: 'Roboto Condensed', sans-serif;
-} */
-
 #menu-toggle-checkbox,
 .toggle {
     display: none;
@@ -127,8 +67,6 @@ label {
 .menu {
     padding: 0;
     margin: 0;
-    /* max-width: 700px; */
-    /* height: 50px; */
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -136,11 +74,10 @@ label {
     list-style-type: none;
     z-index: 2;
     opacity: 0.9;
-    /* width: 100vw; */
 }
 
 .menu li {
-    padding: 10px 15px;
+    padding: 15px 15px;
     text-align: center;
     margin: 1vw;
 }
@@ -160,16 +97,20 @@ label {
     .menu li a {
         font-size: 1.25em;
     }
+
     h1 {
         font-size: 2.25em;
     }
+
     #p_0subtitle {
         font-size: 1.1rem;
         text-align: center;
     }
+
     .title {
         vertical-align: middle;
     }
+
     .site-nav {
         height: 5vh;
     }
@@ -193,32 +134,35 @@ label {
         transition: all .1s linear;
         z-index: 5;
     }
+
     .toggle>img {
         height: 100%;
         margin: 25px;
         transform: rotate(0deg);
         transition: transform .3s linear;
     }
-    /* .toggle:hover {
-        background: #cecece;
-    } */
+
     #menu-toggle-checkbox:checked+label .demo li {
         opacity: 1;
         visibility: visible;
         transition: all .7s linear;
     }
+
     #menu-toggle-checkbox:checked+label .toggle {
         background-color: white;
     }
+
     #menu-toggle-checkbox:checked+label .demo {
         height: 100vh;
         transition: height .3s linear;
         background-color: white;
     }
+
     #menu-toggle-checkbox:checked+label .toggle>img {
         transform: rotate(-90deg);
         transition: transform .3s linear;
     }
+
     .menu {
         /* border-radius: 0px;
         border-top-left-radius: 5px;
@@ -230,6 +174,7 @@ label {
         height: 0px;
         transition: height .3s linear;
     }
+
     .menu li {
         display: flex;
         /* magic */
@@ -239,16 +184,19 @@ label {
         visibility: hidden;
         transition: all .3s linear;
     }
+
     .menu li a {
         /* width: 95%; */
         text-align: center;
         align-self: center;
         align-content: center;
     }
+
 }
 
-
-/* End of Menu Code */
+/* 
+*END OF NAVBAR CODE
+*/
 
 footer {
     text-align: center;
@@ -257,7 +205,7 @@ footer {
 .sidebyside {
     display: flex;
     justify-content: space-around;
-    background-color: #101316;
+    background-color: #C75A37;
 }
 
 .sidebyside>* {
