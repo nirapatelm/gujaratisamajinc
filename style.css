@@ -207,11 +207,17 @@ label {
 }
 
 footer {
-    text-align: center;
+    text-align: left;
 }
 
 #footer-background {
     background-color: #C75A37;
+}
+
+.p-text-styling {
+    line-height: 45px;
+    text-align: match-parent;
+    color: #ffffff;
 }
 
 .sidebyside {
@@ -225,5 +231,9 @@ footer {
 
 .sidebyside h3 {
     padding: 40px;
+    max-width: 450px;
+}
+
+.imgs-sidebyside {
     max-width: 450px;
 }
